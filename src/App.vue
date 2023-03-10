@@ -45,11 +45,11 @@ export default {
           if (events[0]['body'].hasOwnProperty('status')) {
             console.log(`type: ${events[0].body.status.type}`);
             let status = -1;
-            if (events[0].body.status.type === 'error') {
+            if (events[0].body.status.type === 'Error') {
               status = 2;
             } else if (events[0].body.status.type === 'inOperation') {
               status = 1;
-            } else if (events[0].body.status.type === 'idle') {
+            } else if (events[0].body.status.type === 'Idle') {
               status = 0;
             }
             this.$store.commit('setMachineStatus', {
