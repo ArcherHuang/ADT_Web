@@ -6,7 +6,7 @@
           <div class="modal-body">
             <template v-if="from =='log'">
               <div class="title">Log 資訊</div>
-              <div v-if="!infos.length">目前尚無 Log</div>
+              <div v-if="!infos.length">目前尚無 Log </div>
               <table v-else class="table mt-3 table-hover">
                 <thead class="thead-dark">
                   <tr>
