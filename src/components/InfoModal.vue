@@ -29,7 +29,7 @@
                       <!-- <a :href="'https://adt3dstorageaccount.blob.core.windows.net/adt/Log/' + element.name" download>
                         下載
                       </a> -->
-                      <a :href="'https://' + process.env.VUE_APP_BLOB_NAME + '.blob.core.windows.net/adt/Log/' + element.name" download>
+                      <a :href="'https://' + this.blobName + '.blob.core.windows.net/adt/Log/' + element.name" download>
                         下載
                       </a>
                     </td>
