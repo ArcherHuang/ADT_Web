@@ -36,7 +36,7 @@ jobs:
           VUE_APP_CONSUMER_GROUP_NAME: ${{ secrets.VUE_APP_CONSUMER_GROUP_NAME }}
           VUE_APP_EVENTHUB_CONNECTION_STRING: ${{ secrets.VUE_APP_EVENTHUB_CONNECTION_STRING }}
           VUE_APP_API_URL: ${{ secrets.VUE_APP_API_URL }}
-          VUE_APP_BLOB_URL: ${{ secrets.VUE_APP_BLOB_URL }}
+          VUE_APP_BLOB_NAME: ${{ secrets.VUE_APP_BLOB_NAME }}
           VUE_APP_QUERY_ADT_URL: ${{ secrets.VUE_APP_QUERY_ADT_URL }}
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
